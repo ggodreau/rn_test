@@ -24,6 +24,21 @@ Just following [the docs](https://facebook.github.io/react-native/docs/running-o
       <img src="https://raw.githubusercontent.com/ggodreau/rn_test/master/assets/emu.png" width="350">
     </p>
 
+    And finally, _while the emulator is running_ you should be able to see
+    a new device in your `adb devices` output:
+
+    <p align="center">
+      <img src="https://raw.githubusercontent.com/ggodreau/rn_test/master/assets/adb.png" width="350">
+    </p>
+
+    You can then spool up the react app on the emulated device by (if you
+    choose, explicitly) stating the device id, as such: ``react-native
+    run-android --deviceID emulator-5554``. After which you'll get [this
+    error](https://github.com/facebook/jest/issues/3254), which can be solved
+    by entering this:
+
+    ``echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p``
+
 ### Short term goalz:
 
 - Get this thing running in a hello world capacity on an android device

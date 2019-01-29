@@ -57,12 +57,12 @@ const styles = StyleSheet.create({
   html: {
     margin: 0,
     overflow: hidden,
-    height: 100vh,
+    height: 100,
   }
   body: {
     margin: 0,
     overflow: hidden,
-    height: 100vh,
+    height: 100,
   }
   parent: {
     top: 0,
