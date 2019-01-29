@@ -39,6 +39,8 @@ Just following [the docs](https://facebook.github.io/react-native/docs/running-o
 
     ``echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p``
 
+    A successful deploy
+
 ### Short term goalz:
 
 - Get this thing running in a hello world capacity on an android device
@@ -58,6 +60,30 @@ studio.) Here it is:
 
 Next stop is to figure out how to do it over wifi so I don't drain my
 battery.
+
+Here's what a successful deploy over USB looks like:
+
+```
+[greg@13z rn_test]$ react-native run-android --deviceId 36ee79d1
+Starting JS server...
+Building the app...
+
+> Configure project :app
+WARNING: The specified Android SDK Build Tools version (28.0.2) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.2.1.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '28.0.2'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+BUILD SUCCESSFUL in 14s
+57 actionable tasks: 1 executed, 56 up-to-date
+Running /home/greg/Android/Sdk/platform-tools/adb -s 36ee79d1 reverse tcp:8081 tcp:8081
+Installing the app on the device (cd android && adb -s 36ee79d1 install app/build/outputs/apk/app-debug.apk
+app/build/outputs/apk/app-debug.apk: 1...d. 2.9 MB/s (17009481 bytes in 5.504s)
+Please select on your phone whether can install the app by The ADB command?
+	pkg: /data/local/tmp/app-debug.apk
+Success
+Starting the app on 36ee79d1 (/home/greg/Android/Sdk/platform-tools/adb -s 36ee79d1 shell am start -n com.rn_test/com.rn_test.MainActivity)...
+Starting: Intent { cmp=com.rn_test/.MainActivity }
+```
 
 ### Long term goalz:
 
