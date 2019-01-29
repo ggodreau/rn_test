@@ -16,6 +16,10 @@ Just following [the docs](https://facebook.github.io/react-native/docs/running-o
     your permissions aren't correct), and you can download the latest API
     version of android (Pie at the time of writing, a cool ~800MB download, heh).
 
+    <p align="center">
+      <img src="https://raw.githubusercontent.com/ggodreau/rn_test/master/assets/kvm.png" width="350">
+    </p>
+
 ### Short term goalz:
 
 - Get this thing running in a hello world capacity on an android device
