@@ -16,7 +16,9 @@ it into `android/local.properties`. You need the full path, which is lame.
 Did it via a USB cable connection to my laptop (no emulator in android
 studio.) Here it is:
 
-![alt text](./assets/helloworld.jpg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ggodreau/rn_test/master/assets/helloworld.jpg" width="350">
+</p>
 
 Next stop is to figure out how to do it over wifi so I don't drain my
 battery.
