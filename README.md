@@ -7,7 +7,7 @@ Just following [the docs](https://facebook.github.io/react-native/docs/running-o
 
 - The chgrp used for libvirtd is baloney. Permissions on /dev/kvm reset every
     time you reboot, so you need to add the user to /dev/kvm with `sudo usermod
-    -a -G kvm <username`. Kind bogus
+    -a -G kvm <username>`. Kind bogus
 - The android emulator isn't available in `adb devices` by default. You need to
     manually create the emulator by opening android studio, opening up your
     project (which is in the `/android` directory of your react-native app),
@@ -18,6 +18,10 @@ Just following [the docs](https://facebook.github.io/react-native/docs/running-o
 
     <p align="center">
       <img src="https://raw.githubusercontent.com/ggodreau/rn_test/master/assets/kvm.png" width="350">
+    </p>
+
+    <p align="center">
+      <img src="https://raw.githubusercontent.com/ggodreau/rn_test/master/assets/emu.png" width="350">
     </p>
 
 ### Short term goalz:
