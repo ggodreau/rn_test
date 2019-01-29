@@ -1,3 +1,10 @@
+- attach device
+- restart adb in tcp mode:
+  `adb tcpip 5556`
+- get ip of device (in my case, 192.168.13.76)
+- connect to device by typing `adb connect 192.168.13.76`
+- disconnect device
+---
 To run your app on iOS:
    react-native run-ios
    - or -
