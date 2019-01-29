@@ -32,292 +32,6 @@ export default class App extends Component<Props> {
   render() {
     return (
       <div id="parent">
-        <div id="header" />
-        <div id="upper">
-          <div className="ustripeTopBg" />
-          <div className="ustripeTop" />
-          <div className="ustripeBotBg" />
-          <div className="ustripeBot" />
-          <div className="tickTop" />
-          <div className="tickBot" />
-          <div className="notchTop" />
-          <div className="notchBot" />
-          <div className="capText">CAPITAL METRO</div>
-        </div>
-        <div id="break" />
-        <div id="middle">
-          <div
-            className="bstripeTop"
-            style={{ background: this.state.bstripeTop }}
-          />
-          <div className="capLogo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1.19444in"
-              height="2in"
-              viewBox="0 0 86 144"
-            >
-              <path
-                id="hat"
-                fill="gray"
-                stroke="black"
-                strokeWidth="0"
-                d="M 47.19,36.98
-                       C 47.38,22.61 59.28,19.80 59.28,19.80
-                         59.28,19.80 59.47,10.98 59.47,10.98
-                         59.47,10.98 65.10,11.07 65.10,11.07
-                         65.10,11.07 65.38,19.70 65.38,19.70
-                         65.38,19.70 77.56,24.43 77.10,36.89
-                         77.10,36.89 47.19,36.98 47.19,36.98 Z
-                       M 77.80,39.14
-                       C 77.80,39.14 46.07,39.05 46.07,39.05
-                         46.07,39.05 45.98,46.23 45.98,46.23
-                         45.98,46.23 77.89,46.14 77.89,46.14
-                         77.89,46.14 77.80,39.14 77.80,39.14 Z
-                       M 51.57,41.07
-                       C 51.57,41.07 51.58,44.40 51.58,44.40
-                         51.58,44.40 48.18,44.41 48.18,44.41
-                         48.18,44.41 48.20,41.05 48.20,41.05
-                         48.20,41.05 51.57,41.07 51.57,41.07 Z
-                       M 57.94,41.09
-                       C 57.94,41.09 57.95,44.42 57.95,44.42
-                         57.95,44.42 54.55,44.43 54.55,44.43
-                         54.55,44.43 54.56,41.08 54.56,41.08
-                         54.56,41.08 57.94,41.09 57.94,41.09 Z
-                       M 63.81,41.08
-                       C 63.81,41.08 63.82,44.41 63.82,44.41
-                         63.82,44.41 60.42,44.42 60.42,44.42
-                         60.42,44.42 60.43,41.07 60.43,41.07
-                         60.43,41.07 63.81,41.08 63.81,41.08 Z
-                       M 69.73,41.09
-                       C 69.73,41.09 69.73,44.42 69.73,44.42
-                         69.73,44.42 66.34,44.43 66.34,44.43
-                         66.34,44.43 66.35,41.08 66.35,41.08
-                         66.35,41.08 69.73,41.09 69.73,41.09 Z
-                       M 75.32,41.20
-                       C 75.32,41.20 75.33,44.53 75.33,44.53
-                         75.33,44.53 71.93,44.54 71.93,44.54
-                         71.93,44.54 71.95,41.19 71.95,41.19
-                         71.95,41.19 75.32,41.20 75.32,41.20 Z
-                       M 42.50,64.22
-                       C 42.47,64.22 58.62,64.25 58.62,64.25
-                         58.62,64.25 58.62,66.91 58.62,66.91
-                         53.56,67.03 46.84,70.09 46.75,73.59
-                         46.75,73.59 42.34,73.62 42.34,73.62
-                         42.34,73.62 42.53,64.22 42.50,64.22 Z
-                       M 64.09,64.09
-                       C 64.09,64.09 81.56,64.12 81.56,64.12
-                         81.56,64.12 81.62,73.03 81.62,73.03
-                         81.62,73.03 75.09,73.00 75.09,73.00
-                         74.97,69.94 69.28,66.69 64.09,66.69
-                         64.09,66.69 64.09,64.09 64.09,64.09 Z
-                       M 79.25,49.31
-                       C 79.25,49.31 44.62,49.44 44.62,49.44
-                         44.62,49.44 44.50,62.25 44.50,62.25
-                         44.50,62.25 79.19,61.94 79.19,61.94
-                         79.19,61.94 79.25,49.31 79.25,49.31 Z
-                       M 75.92,51.25
-                       C 75.92,51.25 75.94,60.14 75.94,60.14
-                         75.94,60.14 72.10,60.18 72.10,60.18
-                         72.10,60.18 72.14,51.25 72.14,51.25
-                         72.14,51.25 75.92,51.25 75.92,51.25 Z
-                       M 70.05,51.17
-                       C 70.05,51.17 70.07,60.06 70.07,60.06
-                         70.07,60.06 66.23,60.10 66.23,60.10
-                         66.23,60.10 66.27,51.17 66.27,51.17
-                         66.27,51.17 70.05,51.17 70.05,51.17 Z
-                       M 63.83,51.07
-                       C 63.83,51.07 63.85,59.96 63.85,59.96
-                         63.85,59.96 60.00,60.00 60.00,60.00
-                         60.00,60.00 60.05,51.07 60.05,51.07
-                         60.05,51.07 63.83,51.07 63.83,51.07 Z
-                       M 51.79,51.36
-                       C 51.79,51.36 51.81,60.25 51.81,60.25
-                         51.81,60.25 47.96,60.29 47.96,60.29
-                         47.96,60.29 48.01,51.36 48.01,51.36
-                         48.01,51.36 51.79,51.36 51.79,51.36 Z
-                       M 57.91,51.36
-                       C 57.91,51.36 57.93,60.25 57.93,60.25
-                         57.93,60.25 54.09,60.29 54.09,60.29
-                         54.09,60.29 54.13,51.36 54.13,51.36
-                         54.13,51.36 57.91,51.36 57.91,51.36 Z
-                       M 8.82,100.73
-                       C 9.00,86.36 20.91,83.55 20.91,83.55
-                         20.91,83.55 21.09,74.73 21.09,74.73
-                         21.09,74.73 26.73,74.82 26.73,74.82
-                         26.73,74.82 27.00,83.45 27.00,83.45
-                         27.00,83.45 39.18,88.18 38.73,100.64
-                         38.73,100.64 8.82,100.73 8.82,100.73 Z
-                       M 39.55,103.64
-                       C 39.55,103.64 7.82,103.55 7.82,103.55
-                         7.82,103.55 7.73,110.73 7.73,110.73
-                         7.73,110.73 39.64,110.64 39.64,110.64
-                         39.64,110.64 39.55,103.64 39.55,103.64 Z
-                       M 14.20,105.82
-                       C 14.20,105.82 14.20,109.15 14.20,109.15
-                         14.20,109.15 10.80,109.16 10.80,109.16
-                         10.80,109.16 10.82,105.80 10.82,105.80
-                         10.82,105.80 14.20,105.82 14.20,105.82 Z
-                       M 20.19,105.84
-                       C 20.19,105.84 20.20,109.17 20.20,109.17
-                         20.20,109.17 16.80,109.18 16.80,109.18
-                         16.80,109.18 16.81,105.83 16.81,105.83
-                         16.81,105.83 20.19,105.84 20.19,105.84 Z
-                       M 25.68,105.83
-                       C 25.68,105.83 25.69,109.16 25.69,109.16
-                         25.69,109.16 22.29,109.17 22.29,109.17
-                         22.29,109.17 22.31,105.82 22.31,105.82
-                         22.31,105.82 25.68,105.83 25.68,105.83 Z
-                       M 31.23,105.84
-                       C 31.23,105.84 31.23,109.17 31.23,109.17
-                         31.23,109.17 27.84,109.18 27.84,109.18
-                         27.84,109.18 27.85,105.83 27.85,105.83
-                         27.85,105.83 31.23,105.84 31.23,105.84 Z
-                       M 36.20,105.83
-                       C 36.20,105.83 36.20,109.16 36.20,109.16
-                         36.20,109.16 32.80,109.16 32.80,109.16
-                         32.80,109.16 32.82,105.81 32.82,105.81
-                         32.82,105.81 36.20,105.83 36.20,105.83 Z
-                       M 4.12,128.09
-                       C 4.09,128.09 20.25,128.12 20.25,128.12
-                         20.25,128.12 20.25,130.78 20.25,130.78
-                         15.19,130.91 8.47,133.97 8.38,137.47
-                         8.38,137.47 3.97,137.50 3.97,137.50
-                         3.97,137.50 4.16,128.09 4.12,128.09 Z
-                       M 25.84,127.97
-                       C 25.84,127.97 43.31,128.00 43.31,128.00
-                         43.31,128.00 43.38,136.91 43.38,136.91
-                         43.38,136.91 36.84,136.88 36.84,136.88
-                         36.72,133.81 31.03,130.56 25.84,130.56
-                         25.84,130.56 25.84,127.97 25.84,127.97 Z
-                       M 41.00,113.31
-                       C 41.00,113.31 6.38,113.44 6.38,113.44
-                         6.38,113.44 6.25,126.25 6.25,126.25
-                         6.25,126.25 40.94,125.94 40.94,125.94
-                         40.94,125.94 41.00,113.31 41.00,113.31 Z
-                       M 38.67,115.13
-                       C 38.67,115.13 38.69,124.01 38.69,124.01
-                         38.69,124.01 34.85,124.06 34.85,124.06
-                         34.85,124.06 34.89,115.13 34.89,115.13
-                         34.89,115.13 38.67,115.13 38.67,115.13 Z
-                       M 32.17,115.04
-                       C 32.17,115.04 32.20,123.93 32.20,123.93
-                         32.20,123.93 28.35,123.98 28.35,123.98
-                         28.35,123.98 28.40,115.04 28.40,115.04
-                         28.40,115.04 32.17,115.04 32.17,115.04 Z
-                       M 25.33,115.07
-                       C 25.33,115.07 25.35,123.96 25.35,123.96
-                         25.35,123.96 21.50,124.00 21.50,124.00
-                         21.50,124.00 21.55,115.07 21.55,115.07
-                         21.55,115.07 25.33,115.07 25.33,115.07 Z
-                       M 12.91,115.24
-                       C 12.91,115.24 12.93,124.13 12.93,124.13
-                         12.93,124.13 9.09,124.17 9.09,124.17
-                         9.09,124.17 9.13,115.24 9.13,115.24
-                         9.13,115.24 12.91,115.24 12.91,115.24 Z
-                       M 19.04,115.11
-                       C 19.04,115.11 19.06,124.00 19.06,124.00
-                         19.06,124.00 15.21,124.04 15.21,124.04
-                         15.21,124.04 15.26,115.11 15.26,115.11
-                         15.26,115.11 19.04,115.11 19.04,115.11 Z"
-              />
-            </svg>
-          </div>
-          <div className="qr">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              width="80"
-              height="80"
-              viewBox="0 0 290 290"
-            >
-              <rect
-                style={{ fill: `rgb(255, 255, 255)`, fillOpacity: `1` }}
-                x="0"
-                y="0"
-                width="290"
-                height="290"
-              />
-              <g id="elements">
-                <path
-                  style={{ fill: `rgb(0, 0, 0)` }}
-                  d="M 20,20 l 10,0 0,10 -10,0 z M 30,20 l 10,0 0,10 -10,0 z M 40,20 l 10,0 0,10 -10,0 z M 50,20 l 10,0 0,10 -10,0 z M 60,20 l 10,0 0,10 -10,0 z M 70,20 l 10,0 0,10 -10,0 z M 80,20 l 10,0 0,10 -10,0 z M 120,20 l 10,0 0,10 -10,0 z M 140,20 l 10,0 0,10 -10,0 z M 150,20 l 10,0 0,10 -10,0 z M 180,20 l 10,0 0,10 -10,0 z M 200,20 l 10,0 0,10 -10,0 z M 210,20 l 10,0 0,10 -10,0 z M 220,20 l 10,0 0,10 -10,0 z M 230,20 l 10,0 0,10 -10,0 z M 240,20 l 10,0 0,10 -10,0 z M 250,20 l 10,0 0,10 -10,0 z M 260,20 l 10,0 0,10 -10,0 z M 20,30 l 10,0 0,10 -10,0 z M 80,30 l 10,0 0,10 -10,0 z M 100,30 l 10,0 0,10 -10,0 z M 120,30 l 10,0 0,10 -10,0 z M 160,30 l 10,0 0,10 -10,0 z M 170,30 l 10,0 0,10 -10,0 z M 180,30 l 10,0 0,10 -10,0 z M 200,30 l 10,0 0,10 -10,0 z M 260,30 l 10,0 0,10 -10,0 z M 20,40 l 10,0 0,10 -10,0 z M 40,40 l 10,0 0,10 -10,0 z M 50,40 l 10,0 0,10 -10,0 z M 60,40 l 10,0 0,10 -10,0 z M 80,40 l 10,0 0,10 -10,0 z M 140,40 l 10,0 0,10 -10,0 z M 160,40 l 10,0 0,10 -10,0 z M 180,40 l 10,0 0,10 -10,0 z M 200,40 l 10,0 0,10 -10,0 z M 220,40 l 10,0 0,10 -10,0 z M 230,40 l 10,0 0,10 -10,0 z M 240,40 l 10,0 0,10 -10,0 z M 260,40 l 10,0 0,10 -10,0 z M 20,50 l 10,0 0,10 -10,0 z M 40,50 l 10,0 0,10 -10,0 z M 50,50 l 10,0 0,10 -10,0 z M 60,50 l 10,0 0,10 -10,0 z M 80,50 l 10,0 0,10 -10,0 z M 100,50 l 10,0 0,10 -10,0 z M 110,50 l 10,0 0,10 -10,0 z M 120,50 l 10,0 0,10 -10,0 z M 140,50 l 10,0 0,10 -10,0 z M 150,50 l 10,0 0,10 -10,0 z M 200,50 l 10,0 0,10 -10,0 z M 220,50 l 10,0 0,10 -10,0 z M 230,50 l 10,0 0,10 -10,0 z M 240,50 l 10,0 0,10 -10,0 z M 260,50 l 10,0 0,10 -10,0 z M 20,60 l 10,0 0,10 -10,0 z M 40,60 l 10,0 0,10 -10,0 z M 50,60 l 10,0 0,10 -10,0 z M 60,60 l 10,0 0,10 -10,0 z M 80,60 l 10,0 0,10 -10,0 z M 110,60 l 10,0 0,10 -10,0 z M 150,60 l 10,0 0,10 -10,0 z M 180,60 l 10,0 0,10 -10,0 z M 200,60 l 10,0 0,10 -10,0 z M 220,60 l 10,0 0,10 -10,0 z M 230,60 l 10,0 0,10 -10,0 z M 240,60 l 10,0 0,10 -10,0 z M 260,60 l 10,0 0,10 -10,0 z M 20,70 l 10,0 0,10 -10,0 z M 80,70 l 10,0 0,10 -10,0 z M 100,70 l 10,0 0,10 -10,0 z M 110,70 l 10,0 0,10 -10,0 z M 130,70 l 10,0 0,10 -10,0 z M 140,70 l 10,0 0,10 -10,0 z M 150,70 l 10,0 0,10 -10,0 z M 160,70 l 10,0 0,10 -10,0 z M 170,70 l 10,0 0,10 -10,0 z M 180,70 l 10,0 0,10 -10,0 z M 200,70 l 10,0 0,10 -10,0 z M 260,70 l 10,0 0,10 -10,0 z M 20,80 l 10,0 0,10 -10,0 z M 30,80 l 10,0 0,10 -10,0 z M 40,80 l 10,0 0,10 -10,0 z M 50,80 l 10,0 0,10 -10,0 z M 60,80 l 10,0 0,10 -10,0 z M 70,80 l 10,0 0,10 -10,0 z M 80,80 l 10,0 0,10 -10,0 z M 100,80 l 10,0 0,10 -10,0 z M 120,80 l 10,0 0,10 -10,0 z M 140,80 l 10,0 0,10 -10,0 z M 160,80 l 10,0 0,10 -10,0 z M 180,80 l 10,0 0,10 -10,0 z M 200,80 l 10,0 0,10 -10,0 z M 210,80 l 10,0 0,10 -10,0 z M 220,80 l 10,0 0,10 -10,0 z M 230,80 l 10,0 0,10 -10,0 z M 240,80 l 10,0 0,10 -10,0 z M 250,80 l 10,0 0,10 -10,0 z M 260,80 l 10,0 0,10 -10,0 z M 110,90 l 10,0 0,10 -10,0 z M 120,90 l 10,0 0,10 -10,0 z M 130,90 l 10,0 0,10 -10,0 z M 160,90 l 10,0 0,10 -10,0 z M 20,100 l 10,0 0,10 -10,0 z M 30,100 l 10,0 0,10 -10,0 z M 40,100 l 10,0 0,10 -10,0 z M 50,100 l 10,0 0,10 -10,0 z M 60,100 l 10,0 0,10 -10,0 z M 80,100 l 10,0 0,10 -10,0 z M 90,100 l 10,0 0,10 -10,0 z M 100,100 l 10,0 0,10 -10,0 z M 110,100 l 10,0 0,10 -10,0 z M 130,100 l 10,0 0,10 -10,0 z M 140,100 l 10,0 0,10 -10,0 z M 150,100 l 10,0 0,10 -10,0 z M 160,100 l 10,0 0,10 -10,0 z M 170,100 l 10,0 0,10 -10,0 z M 190,100 l 10,0 0,10 -10,0 z M 210,100 l 10,0 0,10 -10,0 z M 230,100 l 10,0 0,10 -10,0 z M 250,100 l 10,0 0,10 -10,0 z M 20,110 l 10,0 0,10 -10,0 z M 60,110 l 10,0 0,10 -10,0 z M 70,110 l 10,0 0,10 -10,0 z M 90,110 l 10,0 0,10 -10,0 z M 100,110 l 10,0 0,10 -10,0 z M 120,110 l 10,0 0,10 -10,0 z M 140,110 l 10,0 0,10 -10,0 z M 180,110 l 10,0 0,10 -10,0 z M 210,110 l 10,0 0,10 -10,0 z M 250,110 l 10,0 0,10 -10,0 z M 20,120 l 10,0 0,10 -10,0 z M 40,120 l 10,0 0,10 -10,0 z M 60,120 l 10,0 0,10 -10,0 z M 70,120 l 10,0 0,10 -10,0 z M 80,120 l 10,0 0,10 -10,0 z M 90,120 l 10,0 0,10 -10,0 z M 120,120 l 10,0 0,10 -10,0 z M 150,120 l 10,0 0,10 -10,0 z M 160,120 l 10,0 0,10 -10,0 z M 170,120 l 10,0 0,10 -10,0 z M 210,120 l 10,0 0,10 -10,0 z M 220,120 l 10,0 0,10 -10,0 z M 230,120 l 10,0 0,10 -10,0 z M 250,120 l 10,0 0,10 -10,0 z M 260,120 l 10,0 0,10 -10,0 z M 40,130 l 10,0 0,10 -10,0 z M 50,130 l 10,0 0,10 -10,0 z M 160,130 l 10,0 0,10 -10,0 z M 180,130 l 10,0 0,10 -10,0 z M 190,130 l 10,0 0,10 -10,0 z M 200,130 l 10,0 0,10 -10,0 z M 210,130 l 10,0 0,10 -10,0 z M 260,130 l 10,0 0,10 -10,0 z M 20,140 l 10,0 0,10 -10,0 z M 30,140 l 10,0 0,10 -10,0 z M 40,140 l 10,0 0,10 -10,0 z M 60,140 l 10,0 0,10 -10,0 z M 80,140 l 10,0 0,10 -10,0 z M 100,140 l 10,0 0,10 -10,0 z M 110,140 l 10,0 0,10 -10,0 z M 120,140 l 10,0 0,10 -10,0 z M 150,140 l 10,0 0,10 -10,0 z M 160,140 l 10,0 0,10 -10,0 z M 190,140 l 10,0 0,10 -10,0 z M 200,140 l 10,0 0,10 -10,0 z M 220,140 l 10,0 0,10 -10,0 z M 240,140 l 10,0 0,10 -10,0 z M 250,140 l 10,0 0,10 -10,0 z M 260,140 l 10,0 0,10 -10,0 z M 20,150 l 10,0 0,10 -10,0 z M 40,150 l 10,0 0,10 -10,0 z M 60,150 l 10,0 0,10 -10,0 z M 70,150 l 10,0 0,10 -10,0 z M 110,150 l 10,0 0,10 -10,0 z M 130,150 l 10,0 0,10 -10,0 z M 190,150 l 10,0 0,10 -10,0 z M 210,150 l 10,0 0,10 -10,0 z M 230,150 l 10,0 0,10 -10,0 z M 250,150 l 10,0 0,10 -10,0 z M 20,160 l 10,0 0,10 -10,0 z M 60,160 l 10,0 0,10 -10,0 z M 70,160 l 10,0 0,10 -10,0 z M 80,160 l 10,0 0,10 -10,0 z M 90,160 l 10,0 0,10 -10,0 z M 120,160 l 10,0 0,10 -10,0 z M 150,160 l 10,0 0,10 -10,0 z M 160,160 l 10,0 0,10 -10,0 z M 170,160 l 10,0 0,10 -10,0 z M 190,160 l 10,0 0,10 -10,0 z M 200,160 l 10,0 0,10 -10,0 z M 210,160 l 10,0 0,10 -10,0 z M 220,160 l 10,0 0,10 -10,0 z M 230,160 l 10,0 0,10 -10,0 z M 250,160 l 10,0 0,10 -10,0 z M 260,160 l 10,0 0,10 -10,0 z M 20,170 l 10,0 0,10 -10,0 z M 40,170 l 10,0 0,10 -10,0 z M 50,170 l 10,0 0,10 -10,0 z M 60,170 l 10,0 0,10 -10,0 z M 90,170 l 10,0 0,10 -10,0 z M 120,170 l 10,0 0,10 -10,0 z M 140,170 l 10,0 0,10 -10,0 z M 160,170 l 10,0 0,10 -10,0 z M 200,170 l 10,0 0,10 -10,0 z M 210,170 l 10,0 0,10 -10,0 z M 220,170 l 10,0 0,10 -10,0 z M 260,170 l 10,0 0,10 -10,0 z M 20,180 l 10,0 0,10 -10,0 z M 60,180 l 10,0 0,10 -10,0 z M 70,180 l 10,0 0,10 -10,0 z M 80,180 l 10,0 0,10 -10,0 z M 90,180 l 10,0 0,10 -10,0 z M 100,180 l 10,0 0,10 -10,0 z M 110,180 l 10,0 0,10 -10,0 z M 120,180 l 10,0 0,10 -10,0 z M 140,180 l 10,0 0,10 -10,0 z M 150,180 l 10,0 0,10 -10,0 z M 160,180 l 10,0 0,10 -10,0 z M 170,180 l 10,0 0,10 -10,0 z M 180,180 l 10,0 0,10 -10,0 z M 190,180 l 10,0 0,10 -10,0 z M 200,180 l 10,0 0,10 -10,0 z M 210,180 l 10,0 0,10 -10,0 z M 220,180 l 10,0 0,10 -10,0 z M 240,180 l 10,0 0,10 -10,0 z M 100,190 l 10,0 0,10 -10,0 z M 130,190 l 10,0 0,10 -10,0 z M 150,190 l 10,0 0,10 -10,0 z M 170,190 l 10,0 0,10 -10,0 z M 180,190 l 10,0 0,10 -10,0 z M 220,190 l 10,0 0,10 -10,0 z M 230,190 l 10,0 0,10 -10,0 z M 20,200 l 10,0 0,10 -10,0 z M 30,200 l 10,0 0,10 -10,0 z M 40,200 l 10,0 0,10 -10,0 z M 50,200 l 10,0 0,10 -10,0 z M 60,200 l 10,0 0,10 -10,0 z M 70,200 l 10,0 0,10 -10,0 z M 80,200 l 10,0 0,10 -10,0 z M 100,200 l 10,0 0,10 -10,0 z M 110,200 l 10,0 0,10 -10,0 z M 150,200 l 10,0 0,10 -10,0 z M 160,200 l 10,0 0,10 -10,0 z M 180,200 l 10,0 0,10 -10,0 z M 200,200 l 10,0 0,10 -10,0 z M 220,200 l 10,0 0,10 -10,0 z M 240,200 l 10,0 0,10 -10,0 z M 250,200 l 10,0 0,10 -10,0 z M 260,200 l 10,0 0,10 -10,0 z M 20,210 l 10,0 0,10 -10,0 z M 80,210 l 10,0 0,10 -10,0 z M 120,210 l 10,0 0,10 -10,0 z M 160,210 l 10,0 0,10 -10,0 z M 180,210 l 10,0 0,10 -10,0 z M 220,210 l 10,0 0,10 -10,0 z M 230,210 l 10,0 0,10 -10,0 z M 250,210 l 10,0 0,10 -10,0 z M 20,220 l 10,0 0,10 -10,0 z M 40,220 l 10,0 0,10 -10,0 z M 50,220 l 10,0 0,10 -10,0 z M 60,220 l 10,0 0,10 -10,0 z M 80,220 l 10,0 0,10 -10,0 z M 100,220 l 10,0 0,10 -10,0 z M 110,220 l 10,0 0,10 -10,0 z M 140,220 l 10,0 0,10 -10,0 z M 150,220 l 10,0 0,10 -10,0 z M 160,220 l 10,0 0,10 -10,0 z M 170,220 l 10,0 0,10 -10,0 z M 180,220 l 10,0 0,10 -10,0 z M 190,220 l 10,0 0,10 -10,0 z M 200,220 l 10,0 0,10 -10,0 z M 210,220 l 10,0 0,10 -10,0 z M 220,220 l 10,0 0,10 -10,0 z M 240,220 l 10,0 0,10 -10,0 z M 20,230 l 10,0 0,10 -10,0 z M 40,230 l 10,0 0,10 -10,0 z M 50,230 l 10,0 0,10 -10,0 z M 60,230 l 10,0 0,10 -10,0 z M 80,230 l 10,0 0,10 -10,0 z M 100,230 l 10,0 0,10 -10,0 z M 110,230 l 10,0 0,10 -10,0 z M 130,230 l 10,0 0,10 -10,0 z M 190,230 l 10,0 0,10 -10,0 z M 200,230 l 10,0 0,10 -10,0 z M 220,230 l 10,0 0,10 -10,0 z M 230,230 l 10,0 0,10 -10,0 z M 240,230 l 10,0 0,10 -10,0 z M 250,230 l 10,0 0,10 -10,0 z M 260,230 l 10,0 0,10 -10,0 z M 20,240 l 10,0 0,10 -10,0 z M 40,240 l 10,0 0,10 -10,0 z M 50,240 l 10,0 0,10 -10,0 z M 60,240 l 10,0 0,10 -10,0 z M 80,240 l 10,0 0,10 -10,0 z M 100,240 l 10,0 0,10 -10,0 z M 110,240 l 10,0 0,10 -10,0 z M 140,240 l 10,0 0,10 -10,0 z M 160,240 l 10,0 0,10 -10,0 z M 230,240 l 10,0 0,10 -10,0 z M 240,240 l 10,0 0,10 -10,0 z M 260,240 l 10,0 0,10 -10,0 z M 20,250 l 10,0 0,10 -10,0 z M 80,250 l 10,0 0,10 -10,0 z M 100,250 l 10,0 0,10 -10,0 z M 110,250 l 10,0 0,10 -10,0 z M 120,250 l 10,0 0,10 -10,0 z M 130,250 l 10,0 0,10 -10,0 z M 140,250 l 10,0 0,10 -10,0 z M 180,250 l 10,0 0,10 -10,0 z M 210,250 l 10,0 0,10 -10,0 z M 220,250 l 10,0 0,10 -10,0 z M 230,250 l 10,0 0,10 -10,0 z M 260,250 l 10,0 0,10 -10,0 z M 20,260 l 10,0 0,10 -10,0 z M 30,260 l 10,0 0,10 -10,0 z M 40,260 l 10,0 0,10 -10,0 z M 50,260 l 10,0 0,10 -10,0 z M 60,260 l 10,0 0,10 -10,0 z M 70,260 l 10,0 0,10 -10,0 z M 80,260 l 10,0 0,10 -10,0 z M 100,260 l 10,0 0,10 -10,0 z M 120,260 l 10,0 0,10 -10,0 z M 150,260 l 10,0 0,10 -10,0 z M 160,260 l 10,0 0,10 -10,0 z M 200,260 l 10,0 0,10 -10,0 z M 210,260 l 10,0 0,10 -10,0 z M 220,260 l 10,0 0,10 -10,0 z M 230,260 l 10,0 0,10 -10,0 z M 240,260 l 10,0 0,10 -10,0 z M 250,260 l 10,0 0,10 -10,0 z M 260,260 l 10,0 0,10 -10,0 z "
-                />
-              </g>
-            </svg>
-          </div>
-          <div className="showCode">SHOW CODE</div>
-          <div
-            style={{ background: this.state.bstripeBot }}
-            className="bstripeBot"
-          />
-          <div className="midText">1 LOCAL</div>
-          <div
-            className="touchMid"
-            onClick={e => {
-              if (this.state.midIsActive) {
-                this.setState({
-                  bstripeTop: '#3f77b0',
-                  bstripeBot: '#014b96',
-                  midIsActive: false,
-                })
-              } else {
-                this.setState({
-                  bstripeTop: '#e95a52',
-                  bstripeBot: '#e22319',
-                  midIsActive: true,
-                })
-              }
-            }}
-          />
-        </div>
-        <div id="break" />
-        <div id="bottom">
-          <div
-            className="fstripeTop"
-            style={{ background: this.state.fstripeTop }}
-          />
-          <div
-            className="fstripeBot"
-            style={{ background: this.state.fstripeBot }}
-          />
-          <div className="botText shim1">
-            {this.state.fdate.toLocaleDateString()} at{' '}
-            {this.state.fdate
-              .toLocaleTimeString()
-              .split('')
-              .reverse()
-              .splice(6)
-              .reverse()
-              .join('')}{' '}
-            {this.state.fdate
-              .toLocaleTimeString()
-              .split('')
-              .reverse()
-              .splice(0, 2)
-              .reverse()
-              .join('')}
-          </div>
-          <div className="botText shim2">Ticket Expiration Date</div>
-          <div
-            className="touchBot"
-            onClick={e => {
-              if (this.state.fIsActive) {
-                this.setState({
-                  fstripeTop: '#b2b2b2',
-                  fstripeBot: '#979797',
-                  fIsActive: false,
-                })
-              } else {
-                this.setState({
-                  fstripeTop: '#feca52',
-                  fstripeBot: '#feb81a',
-                  fIsActive: true,
-                })
-              }
-            }}
-          />
-        </div>
       </div>
     )
   }
@@ -340,322 +54,326 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-  html,
-  body {
-    margin: 0;
-    overflow: hidden;
-    height: 100vh;
+  html: {
+    margin: 0,
+    overflow: hidden,
+    height: 100vh,
   }
-  #parent {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background: lightgrey;
-    opacity: 1;
+  body: {
+    margin: 0,
+    overflow: hidden,
+    height: 100vh,
   }
-  #header {
-    height: 5%;
-    width: 100%;
-    background: #00479d;
-    opacity: 1;
-    position: relative;
-    zIndex: 1;
+  parent: {
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    position: absolute,
+    background: lightgrey,
+    opacity: 1,
   }
-  #upper {
-    height: 27%;
-    width: 100%;
-    background: green;
-    opacity: 1;
-    position: relative;
-    zIndex: 1;
+  header: {
+    height: 5%,
+    width: 100%,
+    background: #00479d,
+    opacity: 1,
+    position: relative,
+    zIndex: 1,
   }
-  #break {
-    height: 0.3%;
-    width: 100%;
-    background: #ddf8ff;
-    position: relative;
-    zIndex: 1;
+  upper: {
+    height: 27%,
+    width: 100%,
+    background: green,
+    opacity: 1,
+    position: relative,
+    zIndex: 1,
   }
-  #middle {
-    height: 62%;
-    width: 100%;
-    background: green;
-    opacity: 1;
+  break: {
+    height: 0.3%,
+    width: 100%,
+    background: #ddf8ff,
+    position: relative,
+    zIndex: 1,
   }
-  #bottom {
-    height: 14%;
-    width: 100%;
-    background: pink;
-    position: relative;
-    zIndex: 1;
-    opacity: 1;
+  middle: {
+    height: 62%,
+    width: 100%,
+    background: green,
+    opacity: 1,
   }
-  .qr {
-    position: relative;
-    top: 30.2%;
-    left: 80.5%;
-    height: 0;
-    width: 0;
-    margin: 0;
-    zIndex: 0;
+  bottom: {
+    height: 14%,
+    width: 100%,
+    background: pink,
+    position: relative,
+    zIndex: 1,
+    opacity: 1,
   }
-  .showCode {
-    position: relative;
-    top: 39.5%;
-    left: 68%;
-    height: 0;
-    width: 0;
-    fontWeight: 999;
-    fontFamily: 'Lucida Grande', sans-serif;
-    color: black;
-    fontSize: 16px;
-    margin: 0;
-    zIndex: 0;
+  qr: {
+    position: relative,
+    top: 30.2%,
+    left: 80.5%,
+    height: 0,
+    width: 0,
+    margin: 0,
+    zIndex: 0,
   }
-  .capLogo {
-    position: relative;
-    top: 30%;
-    left: 0%;
-    height: 0;
-    width: 0;
-    margin: 0;
-    zIndex: 0;
-    opacity: 0.7;
-    animation: logo 5s steps(300, end) 0s infinite;
+  showCode: {
+    position: relative,
+    top: 39.5%,
+    left: 68%,
+    height: 0,
+    width: 0,
+    fontWeight: 999,
+    fontFamily: 'Lucida Grande', sans-serif,
+    color: black,
+    fontSize: 16px,
+    margin: 0,
+    zIndex: 0,
   }
-  .capText {
-    fontFamily: 'Lucida Grande', sans-serif;
-    zIndex: 1;
-    position: relative;
-    top: -205%;
-    width: 100%;
-    textAlign: center;
-    color: white;
-    fontWeight: 999;
-    fontSize: 52px;
+  capLogo: {
+    position: relative,
+    top: 30%,
+    left: 0%,
+    height: 0,
+    width: 0,
+    margin: 0,
+    zIndex: 0,
+    opacity: 0.7,
+    animation: logo 5s steps(300, end) 0s infinite,
   }
-  .midText {
-    fontFamily: 'Lucida Grande', sans-serif;
-    zIndex: 1;
-    position: relative;
-    top: -60%;
-    width: 100%;
-    textAlign: center;
-    color: white;
-    fontWeight: 999;
-    fontSize: 32px;
+  capText: {
+    fontFamily: 'Lucida Grande', sans-serif,
+    zIndex: 1,
+    position: relative,
+    top: -205%,
+    width: 100%,
+    textAlign: center,
+    color: white,
+    fontWeight: 999,
+    fontSize: 52px,
   }
-  .touchMid {
-    zIndex: 3;
-    position: relative;
-    top: -109%;
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    opacity: 0.3;
+  midText: {
+    fontFamily: 'Lucida Grande', sans-serif,
+    zIndex: 1,
+    position: relative,
+    top: -60%,
+    width: 100%,
+    textAlign: center,
+    color: white,
+    fontWeight: 999,
+    fontSize: 32px,
   }
-  .touchBot {
-    zIndex: 4;
-    position: relative;
-    top: -160%;
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    opacity: 0.3;
+  touchMid: {
+    zIndex: 3,
+    position: relative,
+    top: -109%,
+    height: 100%,
+    width: 100%,
+    background: transparent,
+    opacity: 0.3,
   }
-  .botText {
-    fontFamily: 'Lucida Grande', sans-serif;
-    zIndex: 1;
-    position: relative;
-    width: 100%;
-    textAlign: center;
-    color: white;
-    fontWeight: 999;
-    fontSize: 22px;
+  touchBot: {
+    zIndex: 4,
+    position: relative,
+    top: -160%,
+    height: 100%,
+    width: 100%,
+    background: transparent,
+    opacity: 0.3,
   }
-  .shim1 {
-    top: -85%;
+  botText: {
+    fontFamily: 'Lucida Grande', sans-serif,
+    zIndex: 1,
+    position: relative,
+    width: 100%,
+    textAlign: center,
+    color: white,
+    fontWeight: 999,
+    fontSize: 22px,
   }
-  .shim2 {
-    top: -58%;
+  shim1: {
+    top: -85%,
   }
-  .stripeHeader {
-    top: 0%;
-    height: 15%;
-    width: 100%;
-    position: absolute;
-    background: #00479b;
+  shim2: {
+    top: -58%,
   }
-  .ustripeTop {
-    top: -50%;
-    left: -5%;
-    right: 0%;
-    height: 50%;
-    background: #6089c3;
-    position: relative;
-    animation: st 15s steps(300, end) 0s infinite;
-    fontFamily: 'Montserrat', sans-serif;
+  stripeHeader: {
+    top: 0%,
+    height: 15%,
+    width: 100%,
+    position: absolute,
+    background: #00479b,
   }
-  .ustripeTopBg {
-    top: 0;
-    height: 50%;
-    background: #a2b9da;
+  ustripeTop: {
+    top: -50%,
+    left: -5%,
+    right: 0%,
+    height: 50%,
+    background: #6089c3,
+    position: relative,
+    animation: st 15s steps(300, end) 0s infinite,
+    fontFamily: 'Montserrat', sans-serif,
   }
-  .ustripeBot {
-    top: -100%;
-    left: -5%;
-    right: 0%;
-    height: 50%;
-    background: #2e64a8;
-    position: relative;
-    animation: st 15s steps(300, end) 0s infinite;
-    fontFamily: 'Montserrat', sans-serif;
+  ustripeTopBg: {
+    top: 0,
+    height: 50%,
+    background: #a2b9da,
   }
-  .ustripeBotBg {
-    top: -50%;
-    height: 50%;
-    position: relative;
-    background: #83a1d4;
+  ustripeBot: {
+    top: -100%,
+    left: -5%,
+    right: 0%,
+    height: 50%,
+    background: #2e64a8,
+    position: relative,
+    animation: st 15s steps(300, end) 0s infinite,
+    fontFamily: 'Montserrat', sans-serif,
   }
-  .notchTop {
-    transform: rotate(135deg);
-    top: -187%;
-    left: -6%;
-    width: 5px;
-    position: relative;
-    animation: n 15s steps(300, end) 0s infinite;
-    background: transparent;
-    borderTop: 7px solid transparent;
-    borderBottom: 7px solid transparent;
-    borderLeft: 7px solid red; /* #a2b9da;*/
+  ustripeBotBg: {
+    top: -50%,
+    height: 50%,
+    position: relative,
+    background: #83a1d4,
   }
-  .tickTop {
-    transform: rotate(135deg);
-    top: -159%;
-    left: -6%;
-    width: 5px;
-    background: transparemt;
-    position: relative;
-    animation: t 15s steps(300, end) 0s infinite;
-    borderTop: 10px solid transparent;
-    borderBottom: 10px solid transparent;
-    borderLeft: 10px solid #6089c3;
+  notchTop: {
+    transform: rotate(135deg),
+    top: -187%,
+    left: -6%,
+    width: 5px,
+    position: relative,
+    animation: n 15s steps(300, end) 0s infinite,
+    background: transparent,
+    borderTop: 7px solid transparent,
+    borderBottom: 7px solid transparent,
+    borderLeft: 7px solid red, /* #a2b9da;*/
   }
-  .notchBot {
-    transform: rotate(225deg);
-    top: -196.3%;
-    left: -6%;
-    width: 5px;
-    position: relative;
-    animation: n 15s steps(300, end) 0s infinite;
-    background: transparemt;
-    borderTop: 7px solid transparent;
-    borderBottom: 7px solid transparent;
-    borderLeft: 7px solid red; /*#83a1d4;*/
+  tickTop: {
+    transform: rotate(135deg),
+    top: -159%,
+    left: -6%,
+    width: 5px,
+    background: transparemt,
+    position: relative,
+    animation: t 15s steps(300, end) 0s infinite,
+    borderTop: 10px solid transparent,
+    borderBottom: 10px solid transparent,
+    borderLeft: 10px solid #6089c3,
   }
-  .tickBot {
-    transform: rotate(225deg);
-    top: -170.9%;
-    left: -6%;
-    width: 5px;
-    background: transparemt;
-    position: relative;
-    animation: t 15s steps(300, end) 0s infinite;
-    borderTop: 10px solid transparent;
-    borderBottom: 10px solid transparent;
-    borderLeft: 10px solid #2e64a8;
+  notchBot: {
+    transform: rotate(225deg),
+    top: -196.3%,
+    left: -6%,
+    width: 5px,
+    position: relative,
+    animation: n 15s steps(300, end) 0s infinite,
+    background: transparemt,
+    borderTop: 7px solid transparent,
+    borderBottom: 7px solid transparent,
+    borderLeft: 7px solid red, /*#83a1d4;*/
+  }
+  tickBot: {
+    transform: rotate(225deg),
+    top: -170.9%,
+    left: -6%,
+    width: 5px,
+    background: transparemt,
+    position: relative,
+    animation: t 15s steps(300, end) 0s infinite,
+    borderTop: 10px solid transparent,
+    borderBottom: 10px solid transparent,
+    borderLeft: 10px solid #2e64a8,
   }
   @keyframes st {
     0% {
-      left: -5%;
-      right: 0%;
-      width: 0%;
+      left: -5%,
+      right: 0%,
+      width: 0%,
     }
     40% {
-      left: -5%;
-      right: 105%;
-      width: 105%;
+      left: -5%,
+      right: 105%,
+      width: 105%,
     }
     60% {
-      left: 50%;
-      right: 105%;
-      width: 50%;
+      left: 50%,
+      right: 105%,
+      width: 50%,
     }
     80% {
-      left: 50%;
-      right: 105%;
-      width: 50%;
+      left: 50%,
+      right: 105%,
+      width: 50%,
     }
     100% {
-      left: 100%;
-      right: 105%;
-      width: 0%;
+      left: 100%,
+      right: 105%,
+      width: 0%,
     }
   }
   @keyframes t {
     0% {
-      left: -6%;
+      left: -6%,
     }
     40% {
-      left: 99%;
+      left: 99%,
     }
     60% {
-      left: 99%;
+      left: 99%,
     }
     80% {
-      left: 99%;
+      left: 99%,
     }
     100% {
-      left: 99%;
+      left: 99%,
     }
   }
   @keyframes n {
     0% {
-      left: -5.5%;
+      left: -5.5%,
     }
     40% {
-      left: -5.5%;
+      left: -5.5%,
     }
     60% {
-      left: 49.8%;
+      left: 49.8%,
     }
     80% {
-      left: 49.8%;
+      left: 49.8%,
     }
     100% {
-      left: 99.8%;
+      left: 99.8%,
     }
   }
   @keyframes logo {
     0% {
-      left: -40%;
-      top: 50%;
+      left: -40%,
+      top: 50%,
     }
     100% {
-      left: 105%;
-      top: -100%;
+      left: 105%,
+      top: -100%,
     }
   }
-  .bstripeTop {
-    top: 0;
-    height: 50%;
-    background: #3c75b6;
-    position: relative;
+  bstripeTop: {
+    top: 0,
+    height: 50%,
+    background: #3c75b6,
+    position: relative,
   }
-  .bstripeBot {
-    height: 50%;
-    background: #00479d;
+  bstripeBot: {
+    height: 50%,
+    background: #00479d,
   }
-  .fstripeTop {
-    top: 0;
-    height: 50%;
-    background: #afaeaf;
-    position: relative;
+  fstripeTop: {
+    top: 0,
+    height: 50%,
+    background: #afaeaf,
+    position: relative,
   }
-  .fstripeBot {
-    height: 50%;
-    background: #575659;
+  fstripeBot: {
+    height: 50%,
+    background: #575659,
   }
 });

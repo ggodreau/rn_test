@@ -3,6 +3,19 @@
 Just following [the docs](https://facebook.github.io/react-native/docs/running-on-device) here on how to get this boat anchor named react onto a native device.
 
 ---
+### Lessons Learned:
+
+- The chgrp used for libvirtd is baloney. Permissions on /dev/kvm reset every
+    time you reboot, so you need to add the user to /dev/kvm with `sudo usermod
+    -a -G kvm <username`. Kind bogus
+- The android emulator isn't available in `adb devices` by default. You need to
+    manually create the emulator by opening android studio, opening up your
+    project (which is in the `/android` directory of your react-native app),
+    and then click on `Run -> run` from within android studio. There will be
+    prompts to create a virtual emulator (you'll run into kvm issues here if
+    your permissions aren't correct), and you can download the latest API
+    version of android (Pie at the time of writing, a cool ~800MB download, heh).
+
 ### Short term goalz:
 
 - Get this thing running in a hello world capacity on an android device
