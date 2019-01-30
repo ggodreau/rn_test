@@ -1,22 +1,52 @@
 import React, { Component } from 'react';
-import { Alert, AppRegistry, Button, StyleSheet, View, TouchableNativeFeedback, Text } from 'react-native';
+import { AppRegistry, FlatList, StyleSheet, Text, View } from 'react-native';
 
-export default class ButtonBasics extends Component {
-  _onPressButton() {
-    //Alert.alert('You tapped the button!')
-  }
-
+export default class FlatListBasics extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <TouchableNativeFeedback
-              onPress={this._onPressButton}
-              background={TouchableNativeFeedback.Ripple('white', false)}>
-            <View style={{width: 150, height: 100, backgroundColor: 'gray'}}>
-              <Text style={{margin: 30}}>click me pls</Text>
-            </View>
-          </TouchableNativeFeedback>
+        <View style={styles.flatlist}>
+        <FlatList
+          style={styles.flatlist}
+          data={[
+            {key: 'Devin'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+            {key: 'Devin'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Devin'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+            {key: 'Devin'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+          ]}
+          renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+        />
+        </View>
+        <View style={styles.textf}>
+          <Text>Hello there</Text>
         </View>
       </View>
     );
@@ -26,19 +56,24 @@ export default class ButtonBasics extends Component {
 const styles = StyleSheet.create({
   container: {
    flex: 1,
-   justifyContent: 'center',
+   paddingTop: 2,
   },
-  buttonContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'center',
+  flatlist: {
+    flex: 8,
+    backgroundColor: 'black',
   },
-  alternativeLayoutButtonContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  }
-});
+  textf: {
+   flex: 1,
+   paddingTop: 22,
+  },
+  item: {
+    padding: 1,
+    fontSize: 22,
+    height: 44,
+    color: 'green',
+    textAlign: 'center',
+  },
+})
 
 // skip this line if using Create React Native App
-AppRegistry.registerComponent('AwesomeProject', () => ButtonBasics);
+AppRegistry.registerComponent('AwesomeProject', () => FlatListBasics);
